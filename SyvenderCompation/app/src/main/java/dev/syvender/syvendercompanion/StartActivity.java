@@ -23,13 +23,14 @@ public class StartActivity extends AppCompatActivity {
     }
 
     public void switchMusic(View view){
-        mediaPlayer.switchMusicState(view);
+        mediaPlayer.switchMusicState();
     }
 
     public void switchToMainMenu(View view){
         Intent intent = new Intent(this,MainMenu.class);
-        mediaPlayer.switchMusicState(view);
+        mediaPlayer.switchMusicState();
         startActivity(intent);
+        this.finish();
     }
 
 

@@ -1,11 +1,20 @@
 package dev.syvender.syvendercompanion;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toolbar;
 
-public class MainMenu extends AppCompatActivity {
+import com.google.android.material.navigation.NavigationView;
+
+public class MainMenu extends AppCompatActivity{
     private BackgroundMusic mediaPlayer;
 
     @Override
@@ -16,39 +25,35 @@ public class MainMenu extends AppCompatActivity {
         mediaPlayer.startMusic();
     }
 
-    public void switchMusic(View view){
-        mediaPlayer.switchMusicState(view);
-    }
 
-    public void GoToQuestTracker(View view){
+
+    public void GoToQuestTracker(MenuItem view){
         Intent intent = new Intent(this,QuestTrackerActivity.class);
         startActivity(intent);
     }
-    public void GoToItemInfo(View view){
+    public void GoToItemInfo(MenuItem view){
         Intent intent = new Intent(this,ItemInfoActivity.class);
         startActivity(intent);
     }
-    public void GoToStoryCollection(View view){
-        Intent intent = new Intent(this,StoryCollectionActivity.class);
+    public void GoToStoryTime(MenuItem view){
+        Intent intent = new Intent(this, StoryTimeActivity.class);
         startActivity(intent);
     }
-    public void GoToUpdates(View view){
+    public void GoToUpdates(MenuItem view){
         Intent intent = new Intent(this,UpdatesActivity.class);
         startActivity(intent);
     }
-    public void GoToEvents(View view){
+    public void GoToDiscord(MenuItem view){
         Intent intent = new Intent(this,EventsActivity.class);
         startActivity(intent);
     }
-    public void GoToMerchendise(View view){
+    public void GoToMerchendise(MenuItem view){
         Intent intent = new Intent(this,MerchendiseActivity.class);
         startActivity(intent);
     }
-    public void GoToDonates(View view){
+    public void GoToDonates(MenuItem view){
         Intent intent = new Intent(this,DonateActivity.class);
         startActivity(intent);
     }
-
-
-
 }
+

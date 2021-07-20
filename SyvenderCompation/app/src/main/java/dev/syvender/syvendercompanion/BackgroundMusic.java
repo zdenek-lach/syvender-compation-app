@@ -28,7 +28,7 @@ public class BackgroundMusic {
         this.mediaPlayer.start();
     }
 
-    public void switchMusicState(View view) {
+    public void switchMusicState() {
         switch (this.playbackBgMusic) {
             case 1:
                 pauseMusic();
