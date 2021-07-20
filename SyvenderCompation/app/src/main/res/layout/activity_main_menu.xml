@@ -1,118 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/DiscordGrey"
-    tools:context=".MainMenu">
+    android:fitsSystemWindows="true">
 
-    <ImageView
-        android:id="@+id/imageViewMuteSong"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#000000"
-        android:onClick="switchMusic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/buttonMerchendise"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:onClick="GoToMerchendise"
-        android:text="@string/Merchendise"
-        app:layout_constraintEnd_toEndOf="@+id/buttonDonates"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="@+id/buttonDonates"
-        app:layout_constraintTop_toBottomOf="@+id/buttonItemInfo" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_drawer" />
 
-    <Button
-        android:id="@+id/buttonStoryCollection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToStoryCollection"
-        android:text="@string/StoryCollection"
-        app:layout_constraintEnd_toEndOf="@+id/buttonItemInfo"
-        app:layout_constraintStart_toStartOf="@+id/buttonItemInfo"
-        app:layout_constraintTop_toBottomOf="@+id/buttonQuestTracker" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DiscordGrey"
+        tools:context=".MainMenu">
 
-    <Button
-        android:id="@+id/buttonUpdates"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToUpdates"
-        android:text="@string/Updates"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonItemInfo" />
+        <ImageView
+            android:id="@+id/imageViewSyvenderLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/syvender_original" />
 
-    <Button
-        android:id="@+id/buttonQuestTracker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToQuestTracker"
-        android:text="@string/QuestTracker"
-        app:layout_constraintEnd_toEndOf="@+id/buttonStoryCollection"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/buttonStoryCollection"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewSyvenderLogo" />
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:text="@string/app_name"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSyvenderLogo" />
 
-    <Button
-        android:id="@+id/buttonItemInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToItemInfo"
-        android:text="@string/ItemInfo"
-        app:layout_constraintEnd_toEndOf="@+id/buttonMerchendise"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="@+id/buttonMerchendise"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStoryCollection" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/buttonEvents"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToEvents"
-        android:text="@string/Events"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toEndOf="@+id/buttonUpdates"
-        app:layout_constraintTop_toBottomOf="@+id/buttonItemInfo" />
-
-    <Button
-        android:id="@+id/buttonDonates"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:onClick="GoToDonates"
-        android:text="@string/Donates"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMerchendise" />
-
-    <ImageView
-        android:id="@+id/imageViewSyvenderLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonQuestTracker"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="@+id/buttonQuestTracker"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/syvender_original" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

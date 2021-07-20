@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyvenderCompanion">
         <activity
-            android:name=".StoryCollectionActivity"
+            android:name=".StoryTimeActivity"
             android:exported="true"></activity>
         <activity
             android:name=".DonateActivity"
