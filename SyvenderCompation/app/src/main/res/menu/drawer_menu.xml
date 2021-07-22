@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/home_icon"
+            android:title="@string/drawer_menu" />
+        <item
+            android:id="@+id/nav_story_time"
+            android:icon="@drawable/story_icon"
+            android:title="@string/StoryTime" />
+        <item
+            android:id="@+id/nav_quest_tracker"
+            android:icon="@drawable/quest_icon"
+            android:title="@string/QuestTracker" />
+        <item
+            android:id="@+id/nav_discord"
+            android:icon="@drawable/discord_icon"
+            android:title="@string/drawer_discord" />
+        <item
+            android:id="@+id/nav_updates"
+            android:icon="@drawable/updates_icon"
+            android:title="@string/drawer_updates" />
+        <item
+            android:id="@+id/nav_merch"
+            android:icon="@drawable/merch_icon"
+            android:title="@string/drawer_merch" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/donate_icon"
+            android:title="@string/drawer_donate" />
+    </group>
+
+    <item android:title="@string/more_options">
+        <menu>
+            <item
+                android:id="@+id/nav_music_toggle"
+                android:icon="@drawable/toggle_music_icon"
+                android:title="@string/drawer_music_toggle" />
+            <item
+                android:id="@+id/nav_contact_developers"
+                android:icon="@drawable/contact_devs_icon"
+                android:title="@string/contact_devs" />
+        </menu>
+    </item>
+</menu>
