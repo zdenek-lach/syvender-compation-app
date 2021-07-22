@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Syvender Companion</string>
+    <string name="titleMain">Welcome to Syvender Companion</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="helloMessage">Welcome Adventurer!</string>
+    <string name="startingButton">Dig in!</string>
+    <string name="QuestTracker">Quest Tracker</string>
+    <string name="StoryTime">Story Time</string>
+    <string name="ItemInfo">Item Info</string>
+    <string name="Merchendise">Merchendise</string>
+    <string name="Donates">Donates</string>
+    <string name="Updates">Updates</string>
+    <string name="drawer_menu">Main Menu</string>
+    <string name="drawer_story">Story Time</string>
+    <string name="drawer_item">Item Info</string>
+    <string name="drawer_quest">Quest Tracker</string>
+    <string name="drawer_discord">Discord</string>
+    <string name="drawer_updates">Updates</string>
+    <string name="drawer_merch">Merchendise</string>
+    <string name="drawer_donate">Donate</string>
+    <string name="drawer_music_toggle">Toggle music</string>
 </resources>
