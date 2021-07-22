@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.syvender.syvendercompanion">
+    package="io.github.syvendercompanion">
 
     <application
         android:allowBackup="true"
@@ -9,33 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SyvenderCompanion">
-        <activity
-            android:name=".StoryTimeActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".DonateActivity"
-            android:exported="true" />
-        <activity
-            android:name=".UpdatesActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MerchendiseActivity"
-            android:exported="true" />
-        <activity
-            android:name=".EventsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ItemInfoActivity"
-            android:exported="true" />
-        <activity
-            android:name=".QuestTrackerActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainMenu"
-            android:exported="true" />
-        <activity
-            android:name=".StartActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

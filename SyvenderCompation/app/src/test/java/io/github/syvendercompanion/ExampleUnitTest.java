@@ -1,4 +1,4 @@
-package io.github.syvendercompation;
+package io.github.syvendercompanion;
 
 import org.junit.Test;
 
