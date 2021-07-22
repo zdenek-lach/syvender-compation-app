@@ -19,5 +19,8 @@
     <string name="drawer_updates">Updates</string>
     <string name="drawer_merch">Merchendise</string>
     <string name="drawer_donate">Donate</string>
+    <string name="bonus_options">Bonus options:</string>
     <string name="drawer_music_toggle">Toggle music</string>
+    <string name="contact_devs">Report a bug</string>
+    <string name="more_options">More options</string>
 </resources>
