@@ -70,10 +70,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UpdatesFragment()).commit();
                 break;
             case R.id.nav_merch:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MerchendiseFragment()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MerchendiseFragment()).commit();
+                Toast.makeText(this, "We're still preparing merchendise for you.", Toast.LENGTH_LONG).show();
                 break;
             case R.id.nav_donate:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DonateFragment()).commit();
+                OpenPaypalLink();
                 break;
             case R.id.nav_music_toggle:
                 switch (isMusicPlaying) {
@@ -110,6 +111,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void OpenDiscordInvite(View view) {
         String link = getString(R.string.invite_link);
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(link)));
+    }
+
+    public void OpenPaypalLink() {
+        String link = getString(R.string.donate_link);
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(link)));
     }
 

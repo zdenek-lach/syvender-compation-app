@@ -24,18 +24,19 @@
             android:id="@+id/nav_updates"
             android:icon="@drawable/updates_icon"
             android:title="@string/drawer_updates" />
-        <item
-            android:id="@+id/nav_merch"
-            android:icon="@drawable/merch_icon"
-            android:title="@string/drawer_merch" />
-        <item
-            android:id="@+id/nav_donate"
-            android:icon="@drawable/donate_icon"
-            android:title="@string/drawer_donate" />
+
     </group>
 
     <item android:title="@string/more_options">
         <menu>
+            <item
+                android:id="@+id/nav_merch"
+                android:icon="@drawable/merch_icon"
+                android:title="@string/drawer_merch" />
+            <item
+                android:id="@+id/nav_donate"
+                android:icon="@drawable/donate_icon"
+                android:title="@string/drawer_donate" />
             <item
                 android:id="@+id/nav_music_toggle"
                 android:icon="@drawable/toggle_music_icon"
