@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -18,6 +19,8 @@ import org.jetbrains.annotations.NotNull;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
+    private SyvenderDJ DJ;
+    private int isMusicPlaying;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +34,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        DJ = new SyvenderDJ(this);
+        DJ.startMusic();
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_closed);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MainFragment()).commit();
@@ -53,6 +59,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_quest_tracker:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new QuestTrackerFragment()).commit();
+                break;
+            case R.id.nav_discord:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DiscordFragment()).commit();
+                break;
+            case R.id.nav_updates:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UpdatesFragment()).commit();
+                break;
+            case R.id.nav_merch:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MerchendiseFragment()).commit();
+                break;
+            case R.id.nav_donate:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DonateFragment()).commit();
+                break;
+            case R.id.nav_music_toggle:
+                switch (isMusicPlaying) {
+                    case 1:
+                        isMusicPlaying=DJ.pauseMusic();
+                        Toast.makeText(this, R.string.music_play_toast, Toast.LENGTH_LONG).show();
+                        break;
+
+                    case 0:
+                        isMusicPlaying=DJ.startMusic();
+                        Toast.makeText(this, R.string.music_pause_toast, Toast.LENGTH_LONG).show();
+                        break;
+                }
+            case R.id.nav_contact_developers:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DonateFragment()).commit();
                 break;
             default:
                 Toast.makeText(this, "Weird selection happened", Toast.LENGTH_LONG).show();
