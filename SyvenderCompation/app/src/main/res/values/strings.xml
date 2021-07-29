@@ -27,7 +27,8 @@
     <string name="navigation_drawer_closed">Close Navigation Drawer</string>
     <string name="upper_drawer_text">Syvender Companion</string>
     <string name="developer_name">Developed by Zdeněk Lach</string>
-    <string name="Discord">Discord</string>
+    <string name="discord_click_me">Click me to join!</string>
     <string name="music_pause_toast">Music playback was paused.</string>
     <string name="music_play_toast">Music playback started.</string>
+    <string name="invite_link">https://discord.gg/E5Xtc5EvqG</string>
 </resources>
