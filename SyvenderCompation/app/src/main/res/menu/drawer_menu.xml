@@ -17,6 +17,10 @@
             android:icon="@drawable/quest_icon"
             android:title="@string/QuestTracker" />
         <item
+            android:id="@+id/nav_item_collection"
+            android:icon="@drawable/item_icon"
+            android:title="@string/drawer_item" />
+        <item
             android:id="@+id/nav_discord"
             android:icon="@drawable/discord_icon"
             android:title="@string/drawer_discord" />
