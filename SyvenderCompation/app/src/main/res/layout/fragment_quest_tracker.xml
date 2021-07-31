@@ -5,10 +5,6 @@
     android:padding="8dp"
     android:background="@android:color/holo_green_light">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_id"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
 
 
 </LinearLayout>

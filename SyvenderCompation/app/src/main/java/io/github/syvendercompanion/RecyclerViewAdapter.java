@@ -1,6 +1,8 @@
 package io.github.syvendercompanion;
 
 import android.content.Context;
+import android.content.Intent;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,11 +25,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         this.myData = myData;
     }
 
+    @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
         LayoutInflater myInflater = LayoutInflater.from(myContext);
-        view = myInflater.inflate(R.layout.cardview_item_collection,parent,false);
+        view = myInflater.inflate(R.layout.cardview_item_collection, parent, false);
 
         return new MyViewHolder(view);
     }
@@ -36,6 +39,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tv_item_title.setText(myData.get(position).getTitle());
         holder.img_item_thumbnail.setImageResource(myData.get(position).getThumbnail());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(myContext, ItemActivity.class);
+
+
+                intent.putExtra("Title", myData.get(position).getTitle());
+                intent.putExtra("Description", myData.get(position).getDescription());
+                intent.putExtra("Category", myData.get(position).getCategory());
+                intent.putExtra("Thumbnail", myData.get(position).getThumbnail());
+
+
+
+                myContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -43,7 +62,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return myData.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv_item_title;
         ImageView img_item_thumbnail;

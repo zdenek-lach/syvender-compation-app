@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SyvenderCompanion">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".ItemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.SyvenderCompanion.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
