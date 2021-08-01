@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyvenderCompanion">
         <activity
+            android:name=".QuestActivity"
+            android:exported="true" />
+        <activity
             android:name=".ItemActivity"
             android:exported="true" />
         <activity

@@ -138,4 +138,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Reporting a bug!");
         startActivity(emailIntent);
     }
+    public void openQuestActivity(View view){
+        Intent intent = new Intent(this,QuestActivity.class);
+        startActivity(intent);
+    }
 }

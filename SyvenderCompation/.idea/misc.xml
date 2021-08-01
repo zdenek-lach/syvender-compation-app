@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/activity_item.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/activity_quest.xml" value="0.25" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/cardview_item_collection.xml" value="0.5" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/fragment_discord.xml" value="0.3625" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/fragment_donate.xml" value="0.3625" />
@@ -14,6 +15,8 @@
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/fragment_story_time.xml" value="0.297554347826087" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/fragment_updates.xml" value="0.3625" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/nav_header.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/quest_model.xml" value="0.3625" />
+        <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/layout/recyclerview_quest.xml" value="0.3625" />
         <entry key="..\:/Users/lachz/Dropbox/Programming/Android/SyvenderCompanion/SyvenderCompation/app/src/main/res/menu/drawer_menu.xml" value="0.3569230769230769" />
       </map>
     </option>
