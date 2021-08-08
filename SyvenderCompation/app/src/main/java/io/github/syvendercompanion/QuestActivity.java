@@ -39,7 +39,7 @@ public class QuestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quest);
 
         recyclerView = findViewById(R.id.quests_recyclerview_id);//potential problem here?
-        btn = findViewById(R.id.quest_recyclerview_button);
+        btn = findViewById(R.id.quest_recyclerview_save_button);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         adapter = new MultiAdapter(this, quests);
@@ -93,7 +93,7 @@ public class QuestActivity extends AppCompatActivity {
             value.trim();
             System.out.println("QUEST LIST VALUE: " + "'" + value + "'");
         }
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < questList.length; i++) {
             QuestModelClass quest = new QuestModelClass();
             quest.setName(questList[i]);
 //            if (i == 0) {
