@@ -36,6 +36,7 @@
     <string name="save_selected_quests_button">Save</string>
     <string name="is_ticked_quest_selection">is Ticked</string>
     <string name="load_selected_quests_button">Load</string>
+    <string name="updates_note">The game is not in an active development and therefore there are no updates to list here.</string>
     <string-array name="questListArray" >
         <item>Tutorial</item>
         <item>The Journey Begins</item>
