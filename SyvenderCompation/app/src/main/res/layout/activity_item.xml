@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Theme.AppCompat.DayNight.DarkActionBar"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.AppCompat.DayNight.DarkActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ItemActivity">
@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:padding="10dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,33 +24,40 @@
                 android:id="@+id/item_detail_thumbnail"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:background="@color/DiscordGrey"
-                android:scaleType="centerInside"/>
+                android:background="@color/grey"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription" />
+
             <TextView
                 android:id="@+id/item_detail_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Item Title"
                 android:layout_marginTop="10dp"
+                android:text="Item Title"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
             <TextView
                 android:id="@+id/item_detail_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category"
+                android:layout_marginTop="10dp"
                 android:background="@color/grey"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:textStyle="italic"
+                android:text="Category"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/DiscordGrey"/>
 
             <TextView
                 android:id="@+id/item_detail_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
                 android:layout_marginTop="10dp"
-                android:textSize="18sp"/>
-
+                android:text="Description"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
 
 
         </LinearLayout>
