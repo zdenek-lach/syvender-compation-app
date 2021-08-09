@@ -41,7 +41,6 @@ public class ItemCollectionFragment extends Fragment {
         listOfItem.add(new Item("Silver Arrow","Ranged Weapon","Don't just smash your enemies with the bow, use this to reach further!",R.drawable.silver_arrow));
         listOfItem.add(new Item("Sword","Weapon","Swing and slash, smash and dash! Get them all!",R.drawable.sword));
 
-
         RecyclerView myRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this.getContext(),listOfItem);
         myRecyclerView.setLayoutManager(new GridLayoutManager(this.getContext(), 3));

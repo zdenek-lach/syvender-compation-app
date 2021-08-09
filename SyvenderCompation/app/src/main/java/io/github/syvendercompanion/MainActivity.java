@@ -9,7 +9,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private SyvenderDJ DJ;
     private int isMusicPlaying;
 
-//    List<Item> listOfItem;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setBackgroundColor(R.color.teal_200);
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
         switch (item.getItemId()) {
@@ -81,24 +85,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ItemCollectionFragment()).commit();
                 break;
             case R.id.nav_merch:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MerchendiseFragment()).commit();
-                Toast.makeText(this, "We're still preparing merchendise for you.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "We're still preparing merchandise for you.", Toast.LENGTH_LONG).show();
                 break;
             case R.id.nav_donate:
                 OpenPaypalLink();
                 break;
             case R.id.nav_music_toggle:
-                switch (isMusicPlaying) {
-                    case 1:
-                        isMusicPlaying = DJ.pauseMusic();
-                        Toast.makeText(this, R.string.music_play_toast, Toast.LENGTH_LONG).show();
-                        break;
-
-                    case 0:
-                        isMusicPlaying = DJ.startMusic();
-                        Toast.makeText(this, R.string.music_pause_toast, Toast.LENGTH_LONG).show();
-                        break;
-                }
+                DJ.switchPausePlay(this);
+                break;
             case R.id.nav_contact_developers:
                 sendEmail();
                 break;
@@ -131,15 +125,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    public void sendEmail(){
-        Intent emailIntent = new Intent (Intent.ACTION_SEND);
+    public void sendEmail() {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("message/rfc822");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"devs@syvender.io"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Reporting a bug!");
         startActivity(emailIntent);
     }
-    public void openQuestActivity(View view){
-        Intent intent = new Intent(this,QuestActivity.class);
+
+    public void openQuestActivity(View view) {
+        Intent intent = new Intent(this, QuestActivity.class);
         startActivity(intent);
     }
 }

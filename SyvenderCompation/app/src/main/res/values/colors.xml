@@ -13,4 +13,6 @@
     <color name="DiscordBlueish">#7289DA</color>
     <color name="grey">#C9C9C9</color>
     <color name="dark_grey">#494949</color>
+    <color name="light_grey">#BDBDBD</color>
+    <color name="DiscordBlueishDarker">#43589F</color>
 </resources>
