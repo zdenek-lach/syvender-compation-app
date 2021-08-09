@@ -1,1 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2021-08-09T13:07:58.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" version="14.9.5" etag="6cDFy9QloZYSzS-PunWW" type="github"><diagram id="D8ki_hHt29G69kI1GQoN">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-09T13:19:51.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="7k1fUG6hwVZ_P9GaVYC0" version="14.9.5" type="github">
+  <diagram id="D8ki_hHt29G69kI1GQoN" name="Page-1">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.466;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-1" target="JPW-AVHbFfjTcGC-qONV-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="294" y="160" width="186" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-5" value="Syvender Companion App" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="317" y="170" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-6" value="Read Story" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="210" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-7" target="JPW-AVHbFfjTcGC-qONV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-24" value="Inserting data (Finished Quests)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JPW-AVHbFfjTcGC-qONV-23">
+          <mxGeometry x="0.2492" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-7" value="Track Quests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="240" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-8" value="Browse Available Items" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="270" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.474;entryY=0.082;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-9" target="JPW-AVHbFfjTcGC-qONV-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-9" value="Join Discord Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="300" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-10" target="JPW-AVHbFfjTcGC-qONV-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="340" />
+              <mxPoint x="520" y="510" />
+              <mxPoint x="500" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-10" value="Check New Updates" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="330" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-11" target="JPW-AVHbFfjTcGC-qONV-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="370" />
+              <mxPoint x="520" y="510" />
+              <mxPoint x="500" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-11" value="Purchase Merchandise" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="360" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.515;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-12" target="JPW-AVHbFfjTcGC-qONV-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-12" value="Donate money to Devs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="390" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-13" target="JPW-AVHbFfjTcGC-qONV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-13" value="Report a Bug" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="450" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-14" value="Toggle Music ON/OFF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="420" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JPW-AVHbFfjTcGC-qONV-15" target="JPW-AVHbFfjTcGC-qONV-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-15" value="Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="470" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-18" value="Devs Paypal" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="330" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-19" value="Discord Server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="330" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-22" value="Saved to File" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="620" y="100" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JPW-AVHbFfjTcGC-qONV-25" value="Not available yet message" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x" vertex="1" parent="1">
+          <mxGeometry x="450" y="560" width="100" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
