@@ -30,18 +30,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout drawer;
     private SyvenderDJ DJ;
-    private int isMusicPlaying;
 
 
-    @SuppressLint("ResourceAsColor")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getColor(R.color.DiscordBlueishDarker));
         setSupportActionBar(toolbar);
-        toolbar.setBackgroundColor(R.color.DiscordBlueishDarker);
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
