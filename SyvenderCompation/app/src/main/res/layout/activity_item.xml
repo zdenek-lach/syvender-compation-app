@@ -43,11 +43,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@color/light_grey"
+                android:background="@color/grey"
                 android:padding="8dp"
                 android:textStyle="italic"
                 android:text="Category"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:textColor="@color/DiscordGrey"/>
 
             <TextView
                 android:id="@+id/item_detail_description"
